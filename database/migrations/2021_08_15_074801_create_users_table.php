@@ -18,6 +18,7 @@ class CreateUsersTable extends Migration
             $table->string('names',75);
             $table->string('lastnames',75);
             $table->string('email',75);
+            $table->string('ip',75)->nullable();
             $table->timestamps();
         });
     }

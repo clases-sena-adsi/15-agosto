@@ -25,6 +25,7 @@ class UserController extends Controller
             'names' => $request->input('names'),
             'lastnames' => $request->input('lastnames'),
             'email' => $request->input('email'),
+            'ip' => $request->ip(),
         ]);
         return redirect('users');
     }
