@@ -15,6 +15,9 @@ use App\Http\Controllers\UserController;
 */
 
 // Listado de usuarios
+
+Route::redirect('/','users');
+
 Route::get('users', [UserController::class, 'index'])->name('users.index');
 Route::get('users/create', [UserController::class, 'create'])->name('users.create');
 
